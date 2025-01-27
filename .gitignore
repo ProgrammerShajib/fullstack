@@ -1,0 +1,51 @@
+# Ignore node_modules in both backend and frontend
+**/node_modules/
+
+# Ignore environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Ignore build folders
+**/build/
+**/dist/
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore dependency lock files (optional)
+package-lock.json
+yarn.lock
+
+# Ignore cache folders
+.cache/
+
+# Ignore debug files
+*.debug
+
+# Ignore frontend-specific files (React)
+**/.next/
+**/.svelte-kit/
+**/.parcel-cache/
+
+# Ignore backend-specific files (Node.js)
+**/uploads/
+**/temp/
+
+# Ignore coverage reports
+coverage/
+*.lcov
+
+# Ignore MongoDB data (if applicable)
+data/db/
