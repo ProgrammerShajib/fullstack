@@ -17,6 +17,10 @@ const dotenv = require('dotenv');
 // This allows you to access environment variables using `process.env.VARIABLE_NAME`
 dotenv.config();
 
+
+const cors = require("cors");
+app.use(cors());
+
 // Import the userRouter from the './routes/userRoutes' file
 // This router will handle all user-related routes (e.g., creating, reading, updating, and deleting users)
 const userRouter = require('./routes/userRoutes');
